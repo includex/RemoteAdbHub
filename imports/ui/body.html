@@ -1,0 +1,22 @@
+<body>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+ 
+ <div style = "float: left;width:100%">
+      {{#each list}}
+        {{> item}}
+      {{/each}}
+ </div>
+</body>
+ 
+<template name="item">
+  <div class="card" style="width: 18rem;float: left;margin:10px">
+  <div class="card-body">
+    <h5 class="card-title">{{code}} - {{name}}</h5>
+    <p class="card-text">{{adbConnectCommand}}</p>
+    <a href="#" class="btn btn-primary">Connect</a>
+    <a href="#" class="btn btn-primary">Comment</a>
+  </div>
+</div>
+</template>
